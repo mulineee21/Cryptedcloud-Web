@@ -12,7 +12,7 @@ interface CheckoutPageProps {
  * CONFIGURACIÓN DE PRODUCCIÓN:
  * Client ID real proporcionado por el usuario.
  */
-const PAYPAL_CLIENT_ID = 'Acfof-Vwlxl-t6hoAkJIe8gfTf1QmGDe8EpW6bc8kCylH43sljJ9E6P4E0_HC1jWaLhFGYvGvmwSZNjy';
+const PAYPAL_CLIENT_ID = 'PAYPAL_ID';
 
 export const CheckoutPage: React.FC<CheckoutPageProps> = ({ planName, price, onBack, onSuccess }) => {
   const [formData, setFormData] = useState({ username: '', email: '' });
