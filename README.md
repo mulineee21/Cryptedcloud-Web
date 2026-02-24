@@ -15,6 +15,7 @@ Esta pagina funciona gracias a NODE
 para hacer funcionar esta pagina de forma local necesitamos instalar NODE en nuestro equipo, esto va a variar segun el sistema utilizdo 
 
    - Windows
+
 **IMPORTANTE EN WINDOWS, EJECUTAD LA TERMINAL MODO ADMINISTRADOR, O SI NO A LA HORA DE HACER INSTALACIONES CON NPM NO FUNCIONARAN**
 
 Para instalar NODE en windows es recomendable descargarlo desde su pagina oficial y seguir los pasos de instalación, enlace a la pagina de node (https://nodejs.org/es/download)
@@ -39,3 +40,38 @@ Cuando ya tengamos el servidor ligero instalado lo unico que debemos hacer es
 serve -s dist
 ```
 y nuestro proyecto estara corriendo actualmente
+
+- Linux
+
+En linux el proceso es mas sencillo, antes de empezar es importante que tengamos instalado NODE con npm en linux si no lo teneis ejecutad el siguiente comando:
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+```
+seguidamente hemos de ejecutar este comando (si no te funciona prueba a cerrar la terminal y vuelve a iniciarla)
+```bash
+nvm install 24
+```
+y actualmente ya tendremos Node instalado.
+
+Lo siguiente es dirigirnos al directorio del proyecto y ejecutar el comando npm install
+
+```bash
+npm install
+```
+una vez instalado hay que hacer un build
+
+```bash
+npm run build
+```
+Ahora si queremos ejecutar la pagina de forma local es igual en todas las plataformas, nos dirigimos a la terminal y ejecutamos 
+
+```bash
+npm install -g serve
+```
+una vez instalado el servidor ligero hemos de lanzarlo 
+
+```bash
+serve -s dist
+```
+Actualmente estaria corriendo localmente y en la red domestica (LAN)
