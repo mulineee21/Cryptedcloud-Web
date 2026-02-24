@@ -3,7 +3,7 @@ import { GoogleGenAI } from "@google/genai";
 export const getSecurityAdvice = async (userQuery: string): Promise<string> => {
   try {
     // Configuración con tu clave API proporcionada
-    const ai = new GoogleGenAI({ apiKey: "AIzaSyDXccPspCCu5CP9sq-23jG_bNcSg329gDE" });
+    const ai = new GoogleGenAI({ apiKey: "API_KEY" });
     const model = 'gemini-1.5-flash'; // Nota: gemini-3-flash-preview puede no estar disponible según la región/cuota, 1.5-flash es la recomendada.
     
     const systemInstruction = `Eres el Guardián de Seguridad de CryptedCloud, un servicio de almacenamiento y comunicación en la nube ultra-seguro basado en la red Tor.
